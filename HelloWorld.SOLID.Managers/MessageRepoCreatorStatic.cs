@@ -9,6 +9,10 @@ namespace HelloWorld.SOLID.Managers
 {
 	public class MessageRepoCreatorStatic :MessageRepoCreatorBase, IMessageRepoCreatorStatic
 	{
+		/*This is a better pattern for true SOLID programming
+		 as it's open for extension and closed for modification.
+		 */
+
 		public override IMessageRepository Create()
 		{
 			return new MessageRepositoryStatic();

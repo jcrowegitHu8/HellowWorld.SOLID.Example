@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
+using HelloWorld.SOLID.WebApi.App_Start;
 
 namespace HelloWorld.SOLID.WebApi
 {
@@ -19,6 +20,9 @@ namespace HelloWorld.SOLID.WebApi
 				routeTemplate: "api/{controller}/{id}",
 				defaults: new { id = RouteParameter.Optional }
 			);
+
+			// Web API configuration and services
+			StructuremapWebApi.Start();
 		}
 	}
 }

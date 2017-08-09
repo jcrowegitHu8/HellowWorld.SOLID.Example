@@ -30,6 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="SimpleAppSettingHelper, Version=1.0.0.13, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SimpleAppSettingHelper.1.0.0.13\lib\net45\SimpleAppSettingHelper.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -40,9 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Enums\MessageRepositorySourceType.cs" />
+    <Compile Include="IMessageManager.cs" />
+    <Compile Include="IMessageRepoCreatorDynamic.cs" />
     <Compile Include="IMessageRepoCreatorStatic.cs" />
     <Compile Include="MessageManager.cs" />
     <Compile Include="MessageRepoCreatorBase.cs" />
+    <Compile Include="MessageRepoCreatorDynamic.cs" />
     <Compile Include="MessageRepoCreatorStatic.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -51,6 +58,9 @@
       <Project>{9a8560bd-97e7-43fa-a13a-0b21d9617f3c}</Project>
       <Name>HelloWorld.SOLID.Repositories</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
