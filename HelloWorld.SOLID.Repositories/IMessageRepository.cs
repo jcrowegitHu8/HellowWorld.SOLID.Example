@@ -1,7 +1,9 @@
+using HelloWorld.SOLID.Objects;
+
 namespace HelloWorld.SOLID.Repositories
 {
 	public interface IMessageRepository
 	{
-		string GetAMessage();
+		Message GetAMessage();
 	}
 }

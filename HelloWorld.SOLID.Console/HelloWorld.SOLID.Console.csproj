@@ -48,5 +48,15 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HelloWorld.SOLID.Objects\HelloWorld.SOLID.Objects.csproj">
+      <Project>{b500e7d4-3f7e-435f-aaaf-881246d2a38f}</Project>
+      <Name>HelloWorld.SOLID.Objects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HelloWorld.SOLID.SDK\HelloWorld.SOLID.SDK.csproj">
+      <Project>{1d43ddf4-5d3f-4605-8d74-955e2c6f29dd}</Project>
+      <Name>HelloWorld.SOLID.SDK</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

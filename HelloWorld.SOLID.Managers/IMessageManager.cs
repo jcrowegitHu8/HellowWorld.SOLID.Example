@@ -1,7 +1,9 @@
+using HelloWorld.SOLID.Objects;
+
 namespace HelloWorld.SOLID.Managers
 {
 	public interface IMessageManager
 	{
-		string GetAMessage();
+		Message GetAMessage();
 	}
 }

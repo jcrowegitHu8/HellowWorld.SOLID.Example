@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{EF146AF9-1D87-438D-8030-0EE2E23C1DDF}</ProjectGuid>
+    <ProjectGuid>{1D43DDF4-5D3F-4605-8D74-955E2C6F29DD}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>HelloWorld.SOLID.Managers</RootNamespace>
-    <AssemblyName>HelloWorld.SOLID.Managers</AssemblyName>
+    <RootNamespace>HelloWorld.SOLID.SDK</RootNamespace>
+    <AssemblyName>HelloWorld.SOLID.SDK</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -30,6 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="RestSharp, Version=105.2.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\RestSharp.105.2.3\lib\net46\RestSharp.dll</HintPath>
+    </Reference>
     <Reference Include="SimpleAppSettingHelper, Version=1.0.0.13, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\SimpleAppSettingHelper.1.0.0.13\lib\net45\SimpleAppSettingHelper.dll</HintPath>
     </Reference>
@@ -43,27 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Enums\MessageRepositorySourceType.cs" />
-    <Compile Include="IMessageManager.cs" />
-    <Compile Include="IMessageRepoCreatorDynamic.cs" />
-    <Compile Include="IMessageRepoCreatorStatic.cs" />
-    <Compile Include="MessageManager.cs" />
-    <Compile Include="MessageRepoCreatorDynamic.cs" />
-    <Compile Include="MessageRepoCreatorStatic.cs" />
+    <Compile Include="HelloWorldSDK.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\HelloWorld.SOLID.Objects\HelloWorld.SOLID.Objects.csproj">
-      <Project>{B500E7D4-3F7E-435F-AAAF-881246D2A38F}</Project>
-      <Name>HelloWorld.SOLID.Objects</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\HelloWorld.SOLID.Repositories\HelloWorld.SOLID.Repositories.csproj">
-      <Project>{9a8560bd-97e7-43fa-a13a-0b21d9617f3c}</Project>
-      <Name>HelloWorld.SOLID.Repositories</Name>
-    </ProjectReference>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <ProjectReference Include="..\HelloWorld.SOLID.Objects\HelloWorld.SOLID.Objects.csproj">
+      <Project>{b500e7d4-3f7e-435f-aaaf-881246d2a38f}</Project>
+      <Name>HelloWorld.SOLID.Objects</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -44,5 +44,11 @@
     <Compile Include="MessageRepositoryStatic.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HelloWorld.SOLID.Objects\HelloWorld.SOLID.Objects.csproj">
+      <Project>{B500E7D4-3F7E-435F-AAAF-881246D2A38F}</Project>
+      <Name>HelloWorld.SOLID.Objects</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

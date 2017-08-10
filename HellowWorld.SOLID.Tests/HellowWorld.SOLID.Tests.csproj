@@ -74,6 +74,10 @@
       <Project>{ef146af9-1d87-438d-8030-0ee2e23c1ddf}</Project>
       <Name>HelloWorld.SOLID.Managers</Name>
     </ProjectReference>
+    <ProjectReference Include="..\HelloWorld.SOLID.Objects\HelloWorld.SOLID.Objects.csproj">
+      <Project>{b500e7d4-3f7e-435f-aaaf-881246d2a38f}</Project>
+      <Name>HelloWorld.SOLID.Objects</Name>
+    </ProjectReference>
     <ProjectReference Include="..\HelloWorld.SOLID.Repositories\HelloWorld.SOLID.Repositories.csproj">
       <Project>{9a8560bd-97e7-43fa-a13a-0b21d9617f3c}</Project>
       <Name>HelloWorld.SOLID.Repositories</Name>
